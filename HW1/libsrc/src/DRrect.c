@@ -90,6 +90,20 @@ int DRrectGet(
 	return recno;
 }
 
+/* DRrectGet() -
+|
+|	Get a rect from stdin. If "getrec" is TRUE, also get a record number.
++-----------------------------------------------------------------------------*/
+int DRrectGet4(
+	int	rfd,
+	DRrect	*outerRect,
+	DRrect	*innerRect,
+	bool_t	getrec)
+{
+	DRrectGet(rfd, outerRect, FALSE);
+	DRrectGet(rfd, innerRect, FALSE);
+}
+
 /* DRrectGet2() -
 |
 |	Get a rect from stdin with a given epsilon 'radius'.

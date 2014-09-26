@@ -1,0 +1,1999 @@
+cd libsrc/src; make all
+ar crv libdr.a DR.o DRtree.o DRsplit.o DRnode.o DRrect.o DRerror.o DRknn.o PS.o PSbuf.o PShash.o PSerror.o
+a - DR.o
+a - DRtree.o
+a - DRsplit.o
+a - DRnode.o
+a - DRrect.o
+a - DRerror.o
+a - DRknn.o
+a - PS.o
+a - PSbuf.o
+a - PShash.o
+a - PSerror.o
+ranlib libdr.a
+mv libdr.a ../../lib
+cd binsrc; make all
+gcc -g -I../include  -L../lib  DRmain.c  -ldr -lm -o DRmain
+mv DRmain ../bin
+bin/DRmain -d 2 < input
+bin/DRmain: Welcome!
+
+(k)nn (s)earch (i)nsert (d)elete (p)rint d(r)op rin(g)-search (q)uit
+Input record number: Input rectangle coord:
+dim[0] low-side:  dim[0] high-side: dim[1] low-side:  dim[1] high-side: insert: record 8006 insert OK
+
+(k)nn (s)earch (i)nsert (d)elete (p)rint d(r)op rin(g)-search (q)uit
+Input record number: Input rectangle coord:
+dim[0] low-side:  dim[0] high-side: dim[1] low-side:  dim[1] high-side: insert: record 8007 insert OK
+
+(k)nn (s)earch (i)nsert (d)elete (p)rint d(r)op rin(g)-search (q)uit
+
+bin/DRmain: Goodbye!
+
+bin/DRmain -d 2 < s.input
+bin/DRmain: Welcome!
+
+(k)nn (s)earch (i)nsert (d)elete (p)rint d(r)op rin(g)-search (q)uit
+Input tolerance:
+Input center coord:
+dim[0] low-side:  dim[0] high-side: dim[1] low-side:  dim[1] high-side: 	childno=2673
+	childcov=
+	65	762
+	82	888
+	childno=2798
+	childcov=
+	30	659
+	30	941
+	childno=3001
+	childcov=
+	98	563
+	69	934
+	childno=3012
+	childcov=
+	47	704
+	83	624
+	childno=3766
+	childcov=
+	55	770
+	66	934
+	childno=3817
+	childcov=
+	65	549
+	66	949
+	childno=4433
+	childcov=
+	42	753
+	73	923
+	childno=4881
+	childcov=
+	26	876
+	77	987
+	childno=2753
+	childcov=
+	86	632
+	65	735
+	childno=1836
+	childcov=
+	87	725
+	14	470
+	childno=3060
+	childcov=
+	44	908
+	86	673
+	childno=3158
+	childcov=
+	32	899
+	113	840
+	childno=3390
+	childcov=
+	39	846
+	83	693
+	childno=3402
+	childcov=
+	58	185
+	13	686
+	childno=3414
+	childcov=
+	27	947
+	102	653
+	childno=3083
+	childcov=
+	82	455
+	52	855
+	childno=3228
+	childcov=
+	62	516
+	73	956
+	childno=3273
+	childcov=
+	26	69
+	104	351
+	childno=4788
+	childcov=
+	100	533
+	73	961
+	childno=2763
+	childcov=
+	32	188
+	111	944
+	childno=2787
+	childcov=
+	89	243
+	116	980
+	childno=2871
+	childcov=
+	41	462
+	23	815
+	childno=4662
+	childcov=
+	94	939
+	101	923
+	childno=1110
+	childcov=
+	1	575
+	97	431
+	childno=362
+	childcov=
+	89	565
+	115	853
+	childno=1420
+	childcov=
+	10	704
+	59	467
+	childno=455
+	childcov=
+	53	572
+	3	549
+	childno=1603
+	childcov=
+	1	669
+	21	410
+	childno=2635
+	childcov=
+	6	613
+	70	185
+	childno=181
+	childcov=
+	69	693
+	99	763
+	childno=683
+	childcov=
+	68	619
+	53	656
+	childno=762
+	childcov=
+	25	695
+	116	858
+	childno=701
+	childcov=
+	5	976
+	100	475
+	childno=901
+	childcov=
+	47	499
+	28	257
+	childno=246
+	childcov=
+	32	811
+	31	228
+	childno=1501
+	childcov=
+	97	432
+	23	176
+	childno=1587
+	childcov=
+	92	360
+	5	251
+	childno=1668
+	childcov=
+	56	509
+	5	234
+	childno=458
+	childcov=
+	28	788
+	36	305
+	childno=659
+	childcov=
+	68	632
+	57	341
+	childno=679
+	childcov=
+	78	977
+	27	321
+	childno=1696
+	childcov=
+	37	590
+	28	336
+	childno=1751
+	childcov=
+	30	821
+	102	201
+	childno=944
+	childcov=
+	65	997
+	39	392
+	childno=1405
+	childcov=
+	48	855
+	19	351
+	childno=3507
+	childcov=
+	66	283
+	7	154
+	childno=4115
+	childcov=
+	22	26
+	8	233
+	childno=14
+	childcov=
+	56	937
+	11	607
+	childno=942
+	childcov=
+	90	956
+	111	571
+	childno=1385
+	childcov=
+	56	979
+	19	856
+	childno=1846
+	childcov=
+	93	890
+	6	821
+	childno=4928
+	childcov=
+	46	600
+	59	999
+	childno=620
+	childcov=
+	55	749
+	107	993
+	childno=926
+	childcov=
+	43	807
+	29	984
+	childno=1559
+	childcov=
+	52	595
+	23	980
+	childno=2642
+	childcov=
+	45	96
+	8	994
+	childno=3246
+	childcov=
+	5	176
+	46	961
+	childno=38
+	childcov=
+	37	327
+	45	714
+	childno=82
+	childcov=
+	66	298
+	112	884
+	childno=182
+	childcov=
+	16	233
+	17	591
+	childno=452
+	childcov=
+	34	422
+	36	713
+	childno=472
+	childcov=
+	20	311
+	93	953
+	childno=495
+	childcov=
+	74	500
+	30	763
+	childno=580
+	childcov=
+	38	506
+	76	991
+	childno=951
+	childcov=
+	17	362
+	72	358
+	childno=1023
+	childcov=
+	61	139
+	25	762
+	childno=1040
+	childcov=
+	77	107
+	107	821
+	childno=1100
+	childcov=
+	51	496
+	108	778
+	childno=1105
+	childcov=
+	74	376
+	53	730
+	childno=1225
+	childcov=
+	37	429
+	76	607
+	childno=1262
+	childcov=
+	78	154
+	96	608
+	childno=1268
+	childcov=
+	29	401
+	72	793
+	childno=1414
+	childcov=
+	27	48
+	85	923
+	childno=1485
+	childcov=
+	50	319
+	28	884
+	childno=1661
+	childcov=
+	55	459
+	102	545
+	childno=1749
+	childcov=
+	17	429
+	58	279
+	childno=2040
+	childcov=
+	16	417
+	14	719
+	childno=904
+	childcov=
+	88	707
+	105	359
+	childno=913
+	childcov=
+	49	205
+	86	181
+	childno=957
+	childcov=
+	57	184
+	19	465
+	childno=1094
+	childcov=
+	48	215
+	89	235
+	childno=144
+	childcov=
+	85	198
+	111	282
+	childno=714
+	childcov=
+	67	118
+	49	165
+	childno=716
+	childcov=
+	58	326
+	25	187
+	childno=294
+	childcov=
+	28	134
+	104	341
+	childno=483
+	childcov=
+	77	347
+	40	520
+	childno=1533
+	childcov=
+	37	135
+	66	307
+	childno=891
+	childcov=
+	28	93
+	56	304
+	childno=1552
+	childcov=
+	30	158
+	106	464
+	childno=1735
+	childcov=
+	98	314
+	31	317
+	childno=1425
+	childcov=
+	66	921
+	99	191
+	childno=827
+	childcov=
+	75	806
+	101	168
+	childno=1797
+	childcov=
+	97	510
+	81	208
+	childno=820
+	childcov=
+	99	508
+	23	433
+	childno=988
+	childcov=
+	34	405
+	72	440
+	childno=2171
+	childcov=
+	49	222
+	0	478
+	childno=2408
+	childcov=
+	45	205
+	7	349
+	childno=349
+	childcov=
+	4	836
+	109	522
+	childno=895
+	childcov=
+	10	966
+	52	468
+	childno=1244
+	childcov=
+	23	715
+	14	591
+	childno=1550
+	childcov=
+	79	621
+	76	921
+	childno=1643
+	childcov=
+	12	907
+	11	666
+	childno=2152
+	childcov=
+	17	781
+	57	428
+	childno=2260
+	childcov=
+	17	787
+	52	158
+	childno=2326
+	childcov=
+	15	449
+	47	888
+	childno=2490
+	childcov=
+	22	889
+	8	854
+	childno=2561
+	childcov=
+	14	956
+	15	181
+	childno=3656
+	childcov=
+	2	829
+	36	591
+	childno=4471
+	childcov=
+	0	561
+	9	874
+	childno=4549
+	childcov=
+	15	159
+	91	919
+	childno=4576
+	childcov=
+	1	155
+	44	910
+	childno=4734
+	childcov=
+	50	852
+	0	833
+	childno=209
+	childcov=
+	50	463
+	24	628
+	childno=83
+	childcov=
+	34	474
+	17	524
+	childno=1498
+	childcov=
+	11	457
+	16	799
+	childno=1584
+	childcov=
+	4	458
+	115	179
+	childno=492
+	childcov=
+	1	251
+	19	229
+	childno=1609
+	childcov=
+	10	299
+	79	600
+	childno=2475
+	childcov=
+	3	226
+	91	394
+	childno=260
+	childcov=
+	50	479
+	8	175
+	childno=2578
+	childcov=
+	14	61
+	107	697
+	childno=2823
+	childcov=
+	11	450
+	27	754
+	childno=676
+	childcov=
+	5	103
+	29	730
+	childno=3002
+	childcov=
+	4	222
+	27	499
+	childno=3295
+	childcov=
+	7	58
+	50	469
+	childno=3431
+	childcov=
+	3	303
+	5	187
+	childno=3516
+	childcov=
+	5	505
+	90	505
+	childno=3873
+	childcov=
+	4	590
+	85	378
+	childno=4255
+	childcov=
+	0	365
+	47	310
+	childno=4308
+	childcov=
+	9	497
+	114	733
+	childno=4345
+	childcov=
+	12	162
+	15	485
+	childno=4407
+	childcov=
+	67	470
+	6	535
+	childno=4626
+	childcov=
+	4	530
+	48	822
+	childno=4780
+	childcov=
+	13	289
+	99	576
+	childno=561
+	childcov=
+	69	400
+	1	196
+	childno=3328
+	childcov=
+	78	674
+	5	449
+	childno=4786
+	childcov=
+	21	780
+	55	739
+	childno=4794
+	childcov=
+	19	716
+	46	957
+	childno=1923
+	childcov=
+	75	427
+	39	485
+	childno=1940
+	childcov=
+	39	383
+	101	489
+	childno=2211
+	childcov=
+	97	341
+	52	708
+	childno=2214
+	childcov=
+	36	398
+	66	366
+	childno=2120
+	childcov=
+	60	181
+	114	817
+	childno=2620
+	childcov=
+	20	324
+	76	644
+	childno=2623
+	childcov=
+	39	330
+	112	634
+	childno=1885
+	childcov=
+	81	637
+	84	654
+	childno=2276
+	childcov=
+	76	905
+	79	269
+	childno=2439
+	childcov=
+	99	976
+	33	618
+	childno=3281
+	childcov=
+	22	289
+	16	165
+	childno=4083
+	childcov=
+	19	660
+	94	485
+	childno=4908
+	childcov=
+	94	175
+	56	608
+	childno=4942
+	childcov=
+	27	656
+	77	414
+	childno=3731
+	childcov=
+	66	563
+	108	118
+	childno=8006
+	childcov=
+	96	96
+	116	116
+	childno=8006
+	childcov=
+	96	96
+	116	116
+	childno=8006
+	childcov=
+	96	96
+	116	116
+	childno=3095
+	childcov=
+	85	85
+	115	136
+	childno=3606
+	childcov=
+	86	125
+	80	118
+	childno=4694
+	childcov=
+	87	722
+	60	324
+	childno=4257
+	childcov=
+	89	967
+	22	257
+	childno=4279
+	childcov=
+	100	839
+	24	285
+	childno=4338
+	childcov=
+	78	708
+	96	257
+	childno=2023
+	childcov=
+	57	383
+	44	223
+	childno=2039
+	childcov=
+	51	309
+	58	202
+	childno=2350
+	childcov=
+	50	216
+	62	197
+	childno=2511
+	childcov=
+	56	91
+	73	159
+	childno=2696
+	childcov=
+	48	141
+	40	175
+	childno=3218
+	childcov=
+	61	316
+	38	209
+	childno=4135
+	childcov=
+	91	656
+	59	174
+	childno=4736
+	childcov=
+	79	448
+	71	190
+	childno=4795
+	childcov=
+	66	749
+	72	139
+	childno=2081
+	childcov=
+	95	845
+	91	217
+	childno=4326
+	childcov=
+	27	320
+	41	585
+	childno=4476
+	childcov=
+	50	599
+	33	194
+	childno=3658
+	childcov=
+	26	610
+	58	385
+	childno=4590
+	childcov=
+	67	892
+	78	596
+	childno=4593
+	childcov=
+	51	591
+	90	413
+	childno=3759
+	childcov=
+	25	587
+	95	518
+	childno=3865
+	childcov=
+	66	954
+	33	585
+	childno=3881
+	childcov=
+	32	878
+	80	291
+	childno=2863
+	childcov=
+	47	84
+	110	597
+	childno=3093
+	childcov=
+	71	472
+	68	545
+	childno=2647
+	childcov=
+	43	123
+	40	691
+	childno=3191
+	childcov=
+	77	189
+	104	523
+	childno=3198
+	childcov=
+	98	178
+	78	321
+	childno=2658
+	childcov=
+	76	326
+	61	524
+	childno=2755
+	childcov=
+	46	318
+	57	294
+	childno=2783
+	childcov=
+	34	229
+	25	443
+	childno=3631
+	childcov=
+	33	193
+	26	270
+	childno=3679
+	childcov=
+	57	189
+	110	526
+	childno=3845
+	childcov=
+	34	498
+	63	581
+	childno=2698
+	childcov=
+	67	973
+	17	441
+	childno=4120
+	childcov=
+	40	48
+	22	214
+	childno=4281
+	childcov=
+	97	134
+	65	569
+	childno=4467
+	childcov=
+	89	318
+	76	420
+	childno=4616
+	childcov=
+	47	455
+	33	532
+	childno=4663
+	childcov=
+	75	480
+	86	647
+	childno=2125
+	childcov=
+	75	569
+	56	593
+	childno=3181
+	childcov=
+	97	595
+	86	676
+	childno=4412
+	childcov=
+	86	942
+	72	839
+	childno=4420
+	childcov=
+	35	953
+	66	833
+	childno=4725
+	childcov=
+	73	722
+	22	697
+	childno=4751
+	childcov=
+	39	924
+	80	827
+search: 203 records found
+
+(k)nn (s)earch (i)nsert (d)elete (p)rint d(r)op rin(g)-search (q)uit
+Input tolerance:
+Input center coord:
+dim[0] low-side:  dim[0] high-side: dim[1] low-side:  dim[1] high-side: 	childno=2673
+	childcov=
+	65	762
+	82	888
+	childno=2798
+	childcov=
+	30	659
+	30	941
+	childno=3001
+	childcov=
+	98	563
+	69	934
+	childno=3012
+	childcov=
+	47	704
+	83	624
+	childno=3050
+	childcov=
+	89	586
+	137	809
+	childno=3157
+	childcov=
+	80	744
+	139	833
+	childno=3766
+	childcov=
+	55	770
+	66	934
+	childno=3817
+	childcov=
+	65	549
+	66	949
+	childno=4433
+	childcov=
+	42	753
+	73	923
+	childno=4881
+	childcov=
+	26	876
+	77	987
+	childno=2753
+	childcov=
+	86	632
+	65	735
+	childno=1836
+	childcov=
+	87	725
+	14	470
+	childno=1943
+	childcov=
+	74	722
+	176	616
+	childno=3060
+	childcov=
+	44	908
+	86	673
+	childno=3158
+	childcov=
+	32	899
+	113	840
+	childno=3390
+	childcov=
+	39	846
+	83	693
+	childno=3402
+	childcov=
+	58	185
+	13	686
+	childno=3414
+	childcov=
+	27	947
+	102	653
+	childno=3083
+	childcov=
+	82	455
+	52	855
+	childno=4644
+	childcov=
+	85	575
+	194	958
+	childno=3228
+	childcov=
+	62	516
+	73	956
+	childno=3000
+	childcov=
+	35	387
+	201	989
+	childno=3176
+	childcov=
+	59	314
+	178	981
+	childno=2752
+	childcov=
+	47	254
+	146	983
+	childno=2763
+	childcov=
+	32	188
+	111	944
+	childno=2787
+	childcov=
+	89	243
+	116	980
+	childno=2871
+	childcov=
+	41	462
+	23	815
+	childno=4662
+	childcov=
+	94	939
+	101	923
+	childno=2540
+	childcov=
+	17	689
+	161	411
+	childno=1110
+	childcov=
+	1	575
+	97	431
+	childno=4426
+	childcov=
+	1	656
+	119	573
+	childno=362
+	childcov=
+	89	565
+	115	853
+	childno=71
+	childcov=
+	17	710
+	134	424
+	childno=1257
+	childcov=
+	40	617
+	122	662
+	childno=1420
+	childcov=
+	10	704
+	59	467
+	childno=455
+	childcov=
+	53	572
+	3	549
+	childno=1603
+	childcov=
+	1	669
+	21	410
+	childno=181
+	childcov=
+	69	693
+	99	763
+	childno=683
+	childcov=
+	68	619
+	53	656
+	childno=762
+	childcov=
+	25	695
+	116	858
+	childno=4797
+	childcov=
+	15	991
+	186	644
+	childno=1080
+	childcov=
+	7	728
+	151	698
+	childno=1421
+	childcov=
+	90	867
+	137	713
+	childno=1459
+	childcov=
+	57	764
+	132	789
+	childno=1468
+	childcov=
+	49	935
+	131	532
+	childno=701
+	childcov=
+	5	976
+	100	475
+	childno=747
+	childcov=
+	4	904
+	160	725
+	childno=825
+	childcov=
+	10	766
+	143	655
+	childno=901
+	childcov=
+	47	499
+	28	257
+	childno=246
+	childcov=
+	32	811
+	31	228
+	childno=1587
+	childcov=
+	92	360
+	5	251
+	childno=1668
+	childcov=
+	56	509
+	5	234
+	childno=458
+	childcov=
+	28	788
+	36	305
+	childno=659
+	childcov=
+	68	632
+	57	341
+	childno=679
+	childcov=
+	78	977
+	27	321
+	childno=1696
+	childcov=
+	37	590
+	28	336
+	childno=944
+	childcov=
+	65	997
+	39	392
+	childno=1405
+	childcov=
+	48	855
+	19	351
+	childno=474
+	childcov=
+	18	381
+	196	377
+	childno=1223
+	childcov=
+	19	195
+	135	294
+	childno=14
+	childcov=
+	56	937
+	11	607
+	childno=942
+	childcov=
+	90	956
+	111	571
+	childno=1385
+	childcov=
+	56	979
+	19	856
+	childno=1846
+	childcov=
+	93	890
+	6	821
+	childno=572
+	childcov=
+	14	796
+	189	790
+	childno=685
+	childcov=
+	90	845
+	183	967
+	childno=959
+	childcov=
+	49	856
+	202	938
+	childno=1046
+	childcov=
+	72	996
+	201	929
+	childno=1219
+	childcov=
+	39	588
+	182	971
+	childno=1706
+	childcov=
+	82	977
+	158	929
+	childno=2936
+	childcov=
+	17	543
+	163	956
+	childno=4928
+	childcov=
+	46	600
+	59	999
+	childno=620
+	childcov=
+	55	749
+	107	993
+	childno=738
+	childcov=
+	44	585
+	159	989
+	childno=926
+	childcov=
+	43	807
+	29	984
+	childno=1387
+	childcov=
+	76	321
+	179	995
+	childno=1559
+	childcov=
+	52	595
+	23	980
+	childno=3246
+	childcov=
+	5	176
+	46	961
+	childno=38
+	childcov=
+	37	327
+	45	714
+	childno=82
+	childcov=
+	66	298
+	112	884
+	childno=182
+	childcov=
+	16	233
+	17	591
+	childno=452
+	childcov=
+	34	422
+	36	713
+	childno=472
+	childcov=
+	20	311
+	93	953
+	childno=495
+	childcov=
+	74	500
+	30	763
+	childno=580
+	childcov=
+	38	506
+	76	991
+	childno=633
+	childcov=
+	30	287
+	165	754
+	childno=856
+	childcov=
+	96	343
+	191	760
+	childno=951
+	childcov=
+	17	362
+	72	358
+	childno=1023
+	childcov=
+	61	139
+	25	762
+	childno=1040
+	childcov=
+	77	107
+	107	821
+	childno=1100
+	childcov=
+	51	496
+	108	778
+	childno=1105
+	childcov=
+	74	376
+	53	730
+	childno=1225
+	childcov=
+	37	429
+	76	607
+	childno=1262
+	childcov=
+	78	154
+	96	608
+	childno=1268
+	childcov=
+	29	401
+	72	793
+	childno=1455
+	childcov=
+	28	483
+	140	655
+	childno=1485
+	childcov=
+	50	319
+	28	884
+	childno=1549
+	childcov=
+	82	215
+	137	769
+	childno=1661
+	childcov=
+	55	459
+	102	545
+	childno=1749
+	childcov=
+	17	429
+	58	279
+	childno=2040
+	childcov=
+	16	417
+	14	719
+	childno=755
+	childcov=
+	81	590
+	158	309
+	childno=793
+	childcov=
+	38	703
+	120	330
+	childno=863
+	childcov=
+	71	844
+	130	353
+	childno=904
+	childcov=
+	88	707
+	105	359
+	childno=930
+	childcov=
+	75	825
+	144	390
+	childno=1494
+	childcov=
+	40	984
+	168	329
+	childno=957
+	childcov=
+	57	184
+	19	465
+	childno=1094
+	childcov=
+	48	215
+	89	235
+	childno=144
+	childcov=
+	85	198
+	111	282
+	childno=290
+	childcov=
+	83	245
+	195	258
+	childno=294
+	childcov=
+	28	134
+	104	341
+	childno=757
+	childcov=
+	59	113
+	175	473
+	childno=1392
+	childcov=
+	47	362
+	153	450
+	childno=483
+	childcov=
+	77	347
+	40	520
+	childno=1533
+	childcov=
+	37	135
+	66	307
+	childno=1552
+	childcov=
+	30	158
+	106	464
+	childno=1735
+	childcov=
+	98	314
+	31	317
+	childno=795
+	childcov=
+	48	805
+	199	505
+	childno=162
+	childcov=
+	51	559
+	144	303
+	childno=917
+	childcov=
+	57	826
+	138	556
+	childno=969
+	childcov=
+	42	475
+	177	677
+	childno=240
+	childcov=
+	44	920
+	135	619
+	childno=262
+	childcov=
+	32	955
+	162	342
+	childno=390
+	childcov=
+	79	907
+	175	668
+	childno=1775
+	childcov=
+	80	607
+	188	470
+	childno=166
+	childcov=
+	18	141
+	141	857
+	childno=175
+	childcov=
+	54	176
+	195	606
+	childno=482
+	childcov=
+	8	147
+	179	440
+	childno=1619
+	childcov=
+	13	472
+	147	688
+	childno=1806
+	childcov=
+	3	397
+	146	462
+	childno=2361
+	childcov=
+	11	479
+	176	799
+	childno=689
+	childcov=
+	77	782
+	149	247
+	childno=1665
+	childcov=
+	70	806
+	181	230
+	childno=1731
+	childcov=
+	82	721
+	156	256
+	childno=1797
+	childcov=
+	97	510
+	81	208
+	childno=820
+	childcov=
+	99	508
+	23	433
+	childno=988
+	childcov=
+	34	405
+	72	440
+	childno=2171
+	childcov=
+	49	222
+	0	478
+	childno=2408
+	childcov=
+	45	205
+	7	349
+	childno=208
+	childcov=
+	78	771
+	195	641
+	childno=349
+	childcov=
+	4	836
+	109	522
+	childno=530
+	childcov=
+	0	897
+	167	428
+	childno=895
+	childcov=
+	10	966
+	52	468
+	childno=1244
+	childcov=
+	23	715
+	14	591
+	childno=1550
+	childcov=
+	79	621
+	76	921
+	childno=1643
+	childcov=
+	12	907
+	11	666
+	childno=2152
+	childcov=
+	17	781
+	57	428
+	childno=2326
+	childcov=
+	15	449
+	47	888
+	childno=2490
+	childcov=
+	22	889
+	8	854
+	childno=3075
+	childcov=
+	0	724
+	135	413
+	childno=3656
+	childcov=
+	2	829
+	36	591
+	childno=4471
+	childcov=
+	0	561
+	9	874
+	childno=4549
+	childcov=
+	15	159
+	91	919
+	childno=4576
+	childcov=
+	1	155
+	44	910
+	childno=4734
+	childcov=
+	50	852
+	0	833
+	childno=209
+	childcov=
+	50	463
+	24	628
+	childno=83
+	childcov=
+	34	474
+	17	524
+	childno=1380
+	childcov=
+	2	332
+	122	742
+	childno=1498
+	childcov=
+	11	457
+	16	799
+	childno=492
+	childcov=
+	1	251
+	19	229
+	childno=1609
+	childcov=
+	10	299
+	79	600
+	childno=2475
+	childcov=
+	3	226
+	91	394
+	childno=2762
+	childcov=
+	4	128
+	121	381
+	childno=2823
+	childcov=
+	11	450
+	27	754
+	childno=676
+	childcov=
+	5	103
+	29	730
+	childno=3002
+	childcov=
+	4	222
+	27	499
+	childno=282
+	childcov=
+	70	374
+	128	868
+	childno=3516
+	childcov=
+	5	505
+	90	505
+	childno=3873
+	childcov=
+	4	590
+	85	378
+	childno=4218
+	childcov=
+	11	440
+	197	542
+	childno=4255
+	childcov=
+	0	365
+	47	310
+	childno=4308
+	childcov=
+	9	497
+	114	733
+	childno=4345
+	childcov=
+	12	162
+	15	485
+	childno=4407
+	childcov=
+	67	470
+	6	535
+	childno=4626
+	childcov=
+	4	530
+	48	822
+	childno=4780
+	childcov=
+	13	289
+	99	576
+	childno=3328
+	childcov=
+	78	674
+	5	449
+	childno=2564
+	childcov=
+	57	335
+	198	458
+	childno=2008
+	childcov=
+	26	552
+	164	571
+	childno=2150
+	childcov=
+	53	528
+	141	958
+	childno=1875
+	childcov=
+	96	517
+	179	861
+	childno=1878
+	childcov=
+	88	447
+	146	914
+	childno=4786
+	childcov=
+	21	780
+	55	739
+	childno=4794
+	childcov=
+	19	716
+	46	957
+	childno=2267
+	childcov=
+	34	666
+	130	831
+	childno=4190
+	childcov=
+	19	629
+	179	724
+	childno=2113
+	childcov=
+	20	721
+	193	316
+	childno=2189
+	childcov=
+	38	725
+	177	666
+	childno=1923
+	childcov=
+	75	427
+	39	485
+	childno=1940
+	childcov=
+	39	383
+	101	489
+	childno=2211
+	childcov=
+	97	341
+	52	708
+	childno=2214
+	childcov=
+	36	398
+	66	366
+	childno=2247
+	childcov=
+	42	113
+	171	849
+	childno=2435
+	childcov=
+	30	345
+	146	532
+	childno=2536
+	childcov=
+	99	256
+	121	262
+	childno=2120
+	childcov=
+	60	181
+	114	817
+	childno=2210
+	childcov=
+	97	108
+	140	669
+	childno=2620
+	childcov=
+	20	324
+	76	644
+	childno=2623
+	childcov=
+	39	330
+	112	634
+	childno=1885
+	childcov=
+	81	637
+	84	654
+	childno=2276
+	childcov=
+	76	905
+	79	269
+	childno=2439
+	childcov=
+	99	976
+	33	618
+	childno=4083
+	childcov=
+	19	660
+	94	485
+	childno=2965
+	childcov=
+	99	620
+	156	662
+	childno=3047
+	childcov=
+	78	454
+	177	658
+	childno=4908
+	childcov=
+	94	175
+	56	608
+	childno=4926
+	childcov=
+	32	942
+	155	599
+	childno=4942
+	childcov=
+	27	656
+	77	414
+	childno=3332
+	childcov=
+	45	126
+	157	509
+	childno=3347
+	childcov=
+	64	457
+	135	491
+	childno=4762
+	childcov=
+	53	115
+	134	511
+	childno=4781
+	childcov=
+	44	308
+	198	383
+	childno=3807
+	childcov=
+	84	743
+	154	449
+	childno=4955
+	childcov=
+	84	100
+	137	347
+	childno=4231
+	childcov=
+	96	723
+	159	351
+	childno=4077
+	childcov=
+	78	861
+	134	346
+	childno=4694
+	childcov=
+	87	722
+	60	324
+	childno=4257
+	childcov=
+	89	967
+	22	257
+	childno=4338
+	childcov=
+	78	708
+	96	257
+	childno=2023
+	childcov=
+	57	383
+	44	223
+	childno=2039
+	childcov=
+	51	309
+	58	202
+	childno=3124
+	childcov=
+	48	227
+	139	241
+	childno=3218
+	childcov=
+	61	316
+	38	209
+	childno=8007
+	childcov=
+	99	99
+	202	202
+	childno=8007
+	childcov=
+	99	99
+	202	202
+	childno=8007
+	childcov=
+	99	99
+	202	202
+	childno=2081
+	childcov=
+	95	845
+	91	217
+	childno=3773
+	childcov=
+	78	801
+	195	466
+	childno=4326
+	childcov=
+	27	320
+	41	585
+	childno=3632
+	childcov=
+	78	982
+	134	654
+	childno=3658
+	childcov=
+	26	610
+	58	385
+	childno=4590
+	childcov=
+	67	892
+	78	596
+	childno=4593
+	childcov=
+	51	591
+	90	413
+	childno=3759
+	childcov=
+	25	587
+	95	518
+	childno=3819
+	childcov=
+	83	882
+	187	572
+	childno=3865
+	childcov=
+	66	954
+	33	585
+	childno=3881
+	childcov=
+	32	878
+	80	291
+	childno=2436
+	childcov=
+	93	690
+	178	440
+	childno=3994
+	childcov=
+	80	977
+	188	733
+	childno=3093
+	childcov=
+	71	472
+	68	545
+	childno=1989
+	childcov=
+	76	467
+	129	370
+	childno=2647
+	childcov=
+	43	123
+	40	691
+	childno=3191
+	childcov=
+	77	189
+	104	523
+	childno=3198
+	childcov=
+	98	178
+	78	321
+	childno=2658
+	childcov=
+	76	326
+	61	524
+	childno=2705
+	childcov=
+	71	464
+	153	418
+	childno=3550
+	childcov=
+	38	113
+	122	834
+	childno=2755
+	childcov=
+	46	318
+	57	294
+	childno=2783
+	childcov=
+	34	229
+	25	443
+	childno=2797
+	childcov=
+	35	418
+	187	554
+	childno=3631
+	childcov=
+	33	193
+	26	270
+	childno=3679
+	childcov=
+	57	189
+	110	526
+	childno=3691
+	childcov=
+	35	509
+	164	728
+	childno=3747
+	childcov=
+	90	124
+	156	641
+	childno=3795
+	childcov=
+	80	361
+	120	693
+	childno=3832
+	childcov=
+	34	493
+	137	319
+	childno=3845
+	childcov=
+	34	498
+	63	581
+	childno=3907
+	childcov=
+	82	135
+	189	459
+	childno=4386
+	childcov=
+	35	353
+	172	627
+	childno=2698
+	childcov=
+	67	973
+	17	441
+	childno=4281
+	childcov=
+	97	134
+	65	569
+	childno=4467
+	childcov=
+	89	318
+	76	420
+	childno=4616
+	childcov=
+	47	455
+	33	532
+	childno=4663
+	childcov=
+	75	480
+	86	647
+	childno=3655
+	childcov=
+	70	548
+	145	829
+	childno=2125
+	childcov=
+	75	569
+	56	593
+	childno=2407
+	childcov=
+	86	649
+	159	586
+	childno=3181
+	childcov=
+	97	595
+	86	676
+	childno=2744
+	childcov=
+	57	533
+	148	575
+	childno=4412
+	childcov=
+	86	942
+	72	839
+	childno=4420
+	childcov=
+	35	953
+	66	833
+	childno=4725
+	childcov=
+	73	722
+	22	697
+	childno=4751
+	childcov=
+	39	924
+	80	827
+search: 274 records found
+
+(k)nn (s)earch (i)nsert (d)elete (p)rint d(r)op rin(g)-search (q)uit
+
+bin/DRmain: Goodbye!
+
+bin/DRmain -d 2 < k.input
+bin/DRmain: Welcome!
+
+(k)nn (s)earch (i)nsert (d)elete (p)rint d(r)op rin(g)-search (q)uit
+Input rectangle coord:
+dim[0] low-side:  dim[0] high-side: dim[1] low-side:  dim[1] high-side: Enter the number of nearest neighbors: heuristic #3 used
+heuristic #3 used
+heuristic #3 used
+Neighbor #1:
+	childno=3431
+	childcov=
+	3	303
+	5	187
+	dist=34.000000
+
+knn: 1 record found
+
+(k)nn (s)earch (i)nsert (d)elete (p)rint d(r)op rin(g)-search (q)uit
+Input rectangle coord:
+dim[0] low-side:  dim[0] high-side: dim[1] low-side:  dim[1] high-side: Enter the number of nearest neighbors: heuristic #3 used
+heuristic #3 used
+Neighbor #1:
+	childno=4955
+	childcov=
+	84	100
+	137	347
+	dist=-0.006813
+
+Neighbor #2:
+	childno=4781
+	childcov=
+	44	308
+	198	383
+	dist=-0.003604
+
+knn: 2 records found
+
+(k)nn (s)earch (i)nsert (d)elete (p)rint d(r)op rin(g)-search (q)uit
+
+bin/DRmain: Goodbye!
+

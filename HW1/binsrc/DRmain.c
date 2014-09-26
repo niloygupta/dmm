@@ -152,10 +152,10 @@ main(
 
 			/* Ring-search */
 			case 'g':
-				RrectGet(rfd, rect, FALSE);
-				DRrect	*outerRect = rect = (DRrect*)DRrectNew(rfd);
-				RrectGet(rfd, outerRect, FALSE);
-				printf("Algorithm not implemented");
+			DRrect	*outerRect = rect = (DRrect*)DRrectNew(rfd);
+			DRrectGet4(rfd,*outerRect,*rect,FALSE);
+
+			printf("Algorithm not implemented");
 			break;
 
 			/* search */
