@@ -106,6 +106,7 @@ main(
 	int	errno;
 	int	recno;
 	DRrect	*rect;
+	DRrect	*outerRect;
 	int	level;
 
 	/* process command line arguments */
@@ -152,10 +153,10 @@ main(
 
 			/* Ring-search */
 			case 'g':
-			DRrect	*outerRect = rect = (DRrect*)DRrectNew(rfd);
-			DRrectGet4(rfd,*outerRect,*rect,FALSE);
-
+			outerRect = (DRrect*)DRrectNew(rfd);
+			DRrectGet4(rfd,*outerRect,*rect);
 			printf("Algorithm not implemented");
+			DRrectFree(rfd, outerRect);
 			break;
 
 			/* search */

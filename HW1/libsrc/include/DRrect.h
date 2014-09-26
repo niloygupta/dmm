@@ -23,6 +23,11 @@ DRrectGet2(
 	DRrect	*rect,
 	bool_t	getrec);
 
+extern void DRrectGet4(
+	int	rfd,
+	DRrect	*outerRect,
+	DRrect	*innerRect);
+
 extern void
 DRrectRand(
 	int	rfd,		/* R-tree index file descriptor */

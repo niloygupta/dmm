@@ -90,15 +90,14 @@ int DRrectGet(
 	return recno;
 }
 
-/* DRrectGet() -
+/* DRrectGet4() -
 |
-|	Get a rect from stdin. If "getrec" is TRUE, also get a record number.
+|	Get outer and inner rect from stdin.
 +-----------------------------------------------------------------------------*/
-int DRrectGet4(
+void DRrectGet4(
 	int	rfd,
 	DRrect	*outerRect,
-	DRrect	*innerRect,
-	bool_t	getrec)
+	DRrect	*innerRect)
 {
 	DRrectGet(rfd, outerRect, FALSE);
 	DRrectGet(rfd, innerRect, FALSE);
